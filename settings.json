@@ -5,7 +5,7 @@
     "explorer.confirmDragAndDrop": false,
     "explorer.confirmDelete": false,
     "editor.wordWrap": "on",
-    "editor.fontFamily": "'Iosevka Curly Slab smBd Ex', 'Droid Sans Mono', 'monospace', monospace",
+    "editor.fontFamily": "'Iosevka Curly Slab smBd Ex', Consolas, 'Droid Sans Mono', 'monospace', monospace",
     "editor.fontSize": 16,
     "editor.minimap.enabled": false,
     "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4 }"
