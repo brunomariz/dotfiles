@@ -1,13 +1,26 @@
 {
     "terminal.integrated.enableMultiLinePasteWarning": false,
-    "workbench.colorTheme": "Default Dark Modern",
+    "workbench.colorTheme": "Default Dark+",
     "editor.formatOnSave": true,
     "workbench.iconTheme": "material-icon-theme",
     "explorer.confirmDragAndDrop": false,
     "explorer.confirmDelete": false,
-    "editor.wordWrap": "on",
-    "editor.fontFamily": "'Iosevka Curly Slab smBd Ex', Consolas, 'Droid Sans Mono', 'monospace', monospace",
-    "editor.fontSize": 16,
+    "editor.wordWrap": "bounded",
+    "editor.fontFamily": "'Source Code Pro Semibold', Consolas, 'Droid Sans Mono', 'monospace', monospace",
+    "editor.fontSize": 20,
     "editor.minimap.enabled": false,
-    "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4 }"
+    "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4 }",
+    "workbench.startupEditor": "none",
+    "css.lint.unknownAtRules": "ignore",
+
+    // Formatters
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
 }
