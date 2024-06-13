@@ -1,0 +1,71 @@
+{
+	// Place your snippets for yaml here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"Ansible task": {
+		"prefix": "- name: ",
+		"body": [
+			"- name: $1",
+			"\tansible.builtin.$2:",
+			"\t\t$3"
+		]
+	},
+	"Ansible builtin debug task": {
+		"prefix": "ansible.builtin.debug",
+		"body": [
+			"- name: debug $1",
+			"\tansible.builtin.debug:",
+			"\t\t$2"
+		]
+	},
+	"Ansible builtin get_url task": {
+		"prefix": "ansible.builtin.get_url",
+		"body": [
+			"- name: Download $1",
+			"\tansible.builtin.get_url:",
+			"\t\turl:$2",
+			"\t\tdest:$3",
+		]
+	},
+	"Ansible builtin unarchive task": {
+		"prefix": "ansible.builtin.unarchive",
+		"body": [
+			"- name: Unpack $1",
+			"\tansible.builtin.unarchive:",
+			"\t\tremote_src: true$2",
+			"\t\tsrc:$3",
+			"\t\tdest:$4",
+		]
+	},
+	"Ansible builtin shell task": {
+		"prefix": "ansible.builtin.shell",
+		"body": [
+			"- name: Run $1",
+			"\tansible.builtin.shell:",
+			"\t\tchdir:$2",
+			"\t\tcmd: |\n\t\t\t$3",
+		]
+	},
+	"Ansible wait warning": {
+		"prefix": [
+			"wait",
+			"warning",
+			"waitwarning"
+		],
+		"body": [
+			"- name: Wait warning",
+			"\tansible.builtin.debug:",
+			"\t\tmsg: \"Warning: the next task may take a while\"",
+		]
+	},
+}
