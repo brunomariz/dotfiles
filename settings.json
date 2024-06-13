@@ -1,6 +1,6 @@
 {
-    "files.eol": "\n",
-      "terminal.integrated.enableMultiLinePasteWarning": "never",
+  "files.eol": "\n",
+  "terminal.integrated.enableMultiLinePasteWarning": "never",
   "workbench.colorTheme": "Default Dark+",
   "editor.formatOnSave": true,
   "workbench.iconTheme": "material-icon-theme",
