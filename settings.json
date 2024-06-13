@@ -1,31 +1,35 @@
 {
     "files.eol": "\n",
-    "terminal.integrated.enableMultiLinePasteWarning": "never",
-    "workbench.colorTheme": "Default Dark+",
-    "editor.formatOnSave": true,
-    "workbench.iconTheme": "material-icon-theme",
-    "explorer.confirmDragAndDrop": false,
-    "explorer.confirmDelete": false,
-    "editor.wordWrap": "bounded",
-    "editor.fontFamily": "'Source Code Pro Semibold', Consolas, 'Droid Sans Mono', 'monospace', monospace",
-    "editor.fontSize": 18,
-    "editor.fontWeight": 650,
-    "editor.minimap.enabled": false,
-    "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4 }",
-    "workbench.startupEditor": "none",
-    "css.lint.unknownAtRules": "ignore",
-    // Formatters
-    "[typescriptreact]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[typescript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "material-icon-theme.files.associations": {
-        "*.sif": "virtual",
-        "*.def": "Yaml"
-    }   
+      "terminal.integrated.enableMultiLinePasteWarning": "never",
+  "workbench.colorTheme": "Default Dark+",
+  "editor.formatOnSave": true,
+  "workbench.iconTheme": "material-icon-theme",
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "editor.wordWrap": "bounded",
+  "editor.fontFamily": "'Source Code Pro Semibold', Consolas, 'Droid Sans Mono', 'monospace', monospace",
+  "editor.fontSize": 18,
+  "editor.fontWeight": 650,
+  "editor.minimap.enabled": false,
+  "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4 }",
+  "workbench.startupEditor": "none",
+  "css.lint.unknownAtRules": "ignore",
+  // Formatters
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "material-icon-theme.files.associations": {
+    "*.sif": "virtual",
+    "*.def": "Yaml",
+    "hosts": "Settings",
+    "*.dnsmasq": "Settings"
+  },
+  "autoDocstring.docstringFormat": "sphinx",
+  "cmake.useCMakePresets": "always" 
 }
