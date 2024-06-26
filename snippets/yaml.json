@@ -21,7 +21,10 @@
 		]
 	},
 	"Ansible builtin debug task": {
-		"prefix": "ansible.builtin.debug",
+		"prefix": [
+			"ansible.builtin.debug",
+			"- name"
+		],
 		"body": [
 			"- name: debug $1",
 			"\tansible.builtin.debug:",
@@ -29,31 +32,53 @@
 		]
 	},
 	"Ansible builtin get_url task": {
-		"prefix": "ansible.builtin.get_url",
+		"prefix": [
+			"ansible.builtin.get_url",
+			"- name"
+		],
 		"body": [
 			"- name: Download $1",
 			"\tansible.builtin.get_url:",
-			"\t\turl:$2",
-			"\t\tdest:$3",
+			"\t\turl: $2",
+			"\t\tdest: $3",
 		]
 	},
 	"Ansible builtin unarchive task": {
-		"prefix": "ansible.builtin.unarchive",
+		"prefix": [
+			"ansible.builtin.unarchive",
+			"- name"
+		],
 		"body": [
 			"- name: Unpack $1",
 			"\tansible.builtin.unarchive:",
 			"\t\tremote_src: true$2",
-			"\t\tsrc:$3",
-			"\t\tdest:$4",
+			"\t\tsrc: $3",
+			"\t\tdest: $4",
 		]
 	},
 	"Ansible builtin shell task": {
-		"prefix": "ansible.builtin.shell",
+		"prefix": [
+			"ansible.builtin.shell",
+			"- name"
+		],
 		"body": [
 			"- name: Run $1",
 			"\tansible.builtin.shell:",
-			"\t\tchdir:$2",
+			"\t\tchdir: $2",
 			"\t\tcmd: |\n\t\t\t$3",
+		]
+	},
+	"Ansible builtin systemd_service": {
+		"prefix": [
+			"ansible.builtin.systemd_service",
+			"- name"
+		],
+		"body": [
+			"- name: $1",
+			"\tansible.builtin.systemd_service:",
+			"\t\tname: $2",
+			"\t\tstate: $3",
+			"\t\tenabled: $4",
 		]
 	},
 	"Ansible wait warning": {
