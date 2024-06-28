@@ -20,8 +20,8 @@
 		],
 		"body": [
 			"- name: Import subtasks for $1",
-			"import_tasks: $2",
-			"when: $3",
+			"\timport_tasks: $2",
+			"\twhen: $3",
 		]
 	},
 	"Ansible wait warning": {
