@@ -12,73 +12,16 @@
 	// 	],
 	// 	"description": "Log output to console"
 	// }
-	"Ansible task": {
-		"prefix": "- name: ",
-		"body": [
-			"- name: $1",
-			"\tansible.builtin.$2:",
-			"\t\t$3"
-		]
-	},
-	"Ansible builtin debug task": {
+	"Ansible import tasks": {
 		"prefix": [
-			"ansible.builtin.debug",
-			"- name"
+			"- name",
+			"- name import",
+			"import tasks",
 		],
 		"body": [
-			"- name: debug $1",
-			"\tansible.builtin.debug:",
-			"\t\t$2"
-		]
-	},
-	"Ansible builtin get_url task": {
-		"prefix": [
-			"ansible.builtin.get_url",
-			"- name"
-		],
-		"body": [
-			"- name: Download $1",
-			"\tansible.builtin.get_url:",
-			"\t\turl: $2",
-			"\t\tdest: $3",
-		]
-	},
-	"Ansible builtin unarchive task": {
-		"prefix": [
-			"ansible.builtin.unarchive",
-			"- name"
-		],
-		"body": [
-			"- name: Unpack $1",
-			"\tansible.builtin.unarchive:",
-			"\t\tremote_src: true$2",
-			"\t\tsrc: $3",
-			"\t\tdest: $4",
-		]
-	},
-	"Ansible builtin shell task": {
-		"prefix": [
-			"ansible.builtin.shell",
-			"- name"
-		],
-		"body": [
-			"- name: Run $1",
-			"\tansible.builtin.shell:",
-			"\t\tchdir: $2",
-			"\t\tcmd: |\n\t\t\t$3",
-		]
-	},
-	"Ansible builtin systemd_service": {
-		"prefix": [
-			"ansible.builtin.systemd_service",
-			"- name"
-		],
-		"body": [
-			"- name: $1",
-			"\tansible.builtin.systemd_service:",
-			"\t\tname: $2",
-			"\t\tstate: $3",
-			"\t\tenabled: $4",
+			"- name: Import subtasks for $1",
+			"import_tasks: $2",
+			"when: $3",
 		]
 	},
 	"Ansible wait warning": {
@@ -93,4 +36,128 @@
 			"\t\tmsg: \"Warning: the next task may take a while\"",
 		]
 	},
+	"Ansible task": {
+		"prefix": "- name: ",
+		"body": [
+			"- name: $1",
+			"\tansible.builtin.$2:",
+			"\t\t$3"
+		]
+	},
+	"Ansible builtin debug task": {
+		"prefix": [
+			"ansible.builtin.debug",
+			"- name",
+			"- name debug"
+		],
+		"body": [
+			"- name: debug $1",
+			"\tansible.builtin.debug:",
+			"\t\t$2"
+		]
+	},
+	"Ansible builtin get_url task": {
+		"prefix": [
+			"ansible.builtin.get_url",
+			"- name",
+			"- name get_url"
+		],
+		"body": [
+			"- name: Download $1",
+			"\tansible.builtin.get_url:",
+			"\t\turl: $2",
+			"\t\tdest: $3",
+		]
+	},
+	"Ansible builtin unarchive task": {
+		"prefix": [
+			"ansible.builtin.unarchive",
+			"- name",
+			"- name unarchive"
+		],
+		"body": [
+			"- name: Unpack $1",
+			"\tansible.builtin.unarchive:",
+			"\t\tremote_src: true$2",
+			"\t\tsrc: $3",
+			"\t\tdest: $4",
+		]
+	},
+	"Ansible builtin shell task": {
+		"prefix": [
+			"ansible.builtin.shell",
+			"- name",
+			"- name shell"
+		],
+		"body": [
+			"- name: Run $1",
+			"\tansible.builtin.shell:",
+			"\t\tchdir: $2",
+			"\t\tcmd: |\n\t\t\t$3",
+		]
+	},
+	"Ansible builtin systemd_service": {
+		"prefix": [
+			"ansible.builtin.systemd_service",
+			"- name",
+			"- name systemd_service",
+		],
+		"body": [
+			"- name: $1",
+			"\tansible.builtin.systemd_service:",
+			"\t\tname: $2",
+			"\t\tstate: $3",
+			"\t\tenabled: $4",
+		]
+	},
+	"Ansible builtin copy": {
+		"prefix": [
+			"ansible.builtin.copy",
+			"- name",
+			"- name copy",
+		],
+		"body": [
+			"- name: Copy $1",
+			"\tansible.builtin.copy:",
+			"\t\tsrc: $2",
+			"\t\tdest: $3",
+			"\t\towner: $4",
+			"\t\tgroup: $5",
+			"\t\tmode: $6",
+		]
+	},
+	"Ansible builtin dnf": {
+		"prefix": [
+			"ansible.builtin.dnf",
+			"- name",
+			"- name dnf",
+		],
+		"body": [
+			"- name: Install $1",
+			"\tansible.builtin.dnf:",
+			"\t\tname: $2",
+			"\t\tstate: $3",
+		]
+	},
+	"Ansible builtin lineinfile": {
+		"prefix": [
+			"ansible.builtin.lineinfile",
+			"- name",
+			"- name lineinfile",
+		],
+		"body": [
+			"- name: $1",
+			"\tansible.builtin.lineinfile:",
+			"\t\tpath: $2",
+			"\t\tregexp: $3",
+			"\t\tline: $4",
+		]
+	},
+	// - name: Copy file with owner and permissions
+	//   ansible.builtin.copy:
+	//     src: /srv/myfiles/foo.conf
+	//     dest: /etc/foo.conf
+	//     owner: foo
+	//     group: foo
+	//     mode: '0644'
 }
