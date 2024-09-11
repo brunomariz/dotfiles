@@ -1,5 +1,4 @@
 {
-  "files.eol": "\n",
   "terminal.integrated.enableMultiLinePasteWarning": "never",
   "workbench.colorTheme": "Default Dark+",
   "editor.formatOnSave": true,
@@ -31,5 +30,13 @@
     "*.dnsmasq": "Settings"
   },
   "autoDocstring.docstringFormat": "sphinx",
-  "cmake.useCMakePresets": "always" 
+  "cmake.useCMakePresets": "always",
+  "remote.SSH.remotePlatform": {
+    "ws10": "linux",
+    "mintrop": "linux"
+  },
+  "notebook.defaultFormatter": "ms-python.black-formatter",
+  "notebook.formatOnSave.enabled": true,
+  "jupyter.askForKernelRestart": false,
+  "editor.wordWrapColumn": 90
 }
