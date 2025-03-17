@@ -5,6 +5,7 @@
   "workbench.iconTheme": "material-icon-theme",
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmDelete": false,
+  "explorer.decorations.colors": true, // Make sure git attributes are colored (eg. orange modified files)
   "editor.wordWrap": "bounded",
   "editor.fontFamily": "'Source Code Pro Semibold', Consolas, 'Droid Sans Mono', 'monospace', monospace",
   "editor.fontSize": 18,
@@ -33,10 +34,16 @@
   "cmake.useCMakePresets": "always",
   "remote.SSH.remotePlatform": {
     "ws10": "linux",
-    "mintrop": "linux"
+    "mintrop": "linux",
+    "ogbon": "linux"
   },
   "notebook.defaultFormatter": "ms-python.black-formatter",
   "notebook.formatOnSave.enabled": true,
   "jupyter.askForKernelRestart": false,
-  "editor.wordWrapColumn": 90
+  "editor.wordWrapColumn": 90,
+  "remote.autoForwardPortsSource": "hybrid",
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  "git.ignoreLegacyWarning": true
 }
