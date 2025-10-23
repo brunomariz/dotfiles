@@ -1,0 +1,20 @@
+// Local Settings for OGBON cluster in .vscode/settings.json. Requires the Custom Local Formatters (jkillian) extension. 
+//
+// /home/bruno.mariz/opt/cmake-command is an executable bash script with a command to execute cmake, in this case, the contents are:
+// #!/bin/bash
+// apptainer exec ~/sif/nvhpc_25.7-devel-cuda12.9-ubuntu24.04.sif cmake "$@"
+
+{
+  "cmake.sourceDirectory": "/home/bruno.mariz/projects/msc_bruno/xmk",
+  "files.associations": {
+    "time.h": "c",
+    "stdlib.h": "c"
+  },
+  "customLocalFormatters.formatters": [
+    {
+      "command": "apptainer exec ~/sif/clang-format_latest.sif clang-format -style=file:xmk/.clang-format",
+      "languages": ["c", "cpp"]
+    }
+  ],
+  "cmake.cmakePath": "/home/bruno.mariz/opt/cmake-command"
+}
