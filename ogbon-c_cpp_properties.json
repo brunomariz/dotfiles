@@ -1,0 +1,25 @@
+{
+  "configurations": [
+    {
+      "name": "Ogbon",
+      "includePath": [
+        "${workspaceFolder}/xmk",
+        "${workspaceFolder}/xmk/src",
+        "${workspaceFolder}/xmk/tests",
+        "${HOME}/mount/openacc_include"
+      ],
+      "browse": {
+        "path": [
+          "${workspaceFolder}/xmk",
+          "${workspaceFolder}/xmk/src",
+          "${workspaceFolder}/xmk/tests"
+        ],
+        "limitSymbolsToIncludedHeaders": true,
+        "databaseFilename": ""
+      },
+      "defines": [],
+      "compilerArgs": []
+    }
+  ],
+  "version": 4
+}
