@@ -86,5 +86,15 @@
     {
         "key": "ctrl+shift+n",
         "command": "workbench.action.terminal.newInActiveWorkspace"
+    },
+    {
+        "key": "ctrl+k e",
+        "command": "-workbench.files.action.focusOpenEditorsView",
+        "when": "workbench.explorer.openEditorsView.active"
+    },
+    {
+        "key": "ctrl+k e",
+        "command": "cursorEnd",
+        "when": "textInputFocus"
     }
 ]
