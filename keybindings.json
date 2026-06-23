@@ -88,6 +88,16 @@
         "command": "workbench.action.terminal.newInActiveWorkspace"
     },
     {
+        "key": "ctrl+k e",
+        "command": "-workbench.files.action.focusOpenEditorsView",
+        "when": "workbench.explorer.openEditorsView.active"
+    },
+    {
+        "key": "ctrl+k e",
+        "command": "cursorEnd",
+        "when": "textInputFocus"
+    },
+    {
         "key": "ctrl+h",
         "command": "-editor.action.startFindReplaceAction",
         "when": "editorFocus || editorIsOpen"
@@ -152,13 +162,28 @@
         "when": "textInputFocus"
     },
     {
-        "key": "ctrl+k e",
-        "command": "-workbench.files.action.focusOpenEditorsView",
-        "when": "workbench.explorer.openEditorsView.active"
+        "key": "ctrl+k o",
+        "command": "-workbench.action.copyEditorToNewWindow",
+        "when": "activeEditor"
     },
     {
-        "key": "ctrl+k e",
-        "command": "cursorEnd",
+        "key": "ctrl+k o",
+        "command": "workbench.action.files.openFile",
+        "when": "true"
+    },
+    {
+        "key": "ctrl+o",
+        "command": "-workbench.action.files.openFile",
+        "when": "true"
+    },
+    {
+        "key": "ctrl+o",
+        "command": "cursorRight",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+y",
+        "command": "cursorLeft",
         "when": "textInputFocus"
     }
 ]
