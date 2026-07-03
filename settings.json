@@ -24,6 +24,8 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[python]": {
+    // For this to work, it's necessary to run Python: Select interpreter and choose an 
+    // interpreter from a venv which has black installed
     "editor.defaultFormatter": "ms-python.black-formatter"
   },
   "autoDocstring.docstringFormat": "sphinx",
@@ -32,5 +34,6 @@
   "notebook.formatOnSave.enabled": true,
   "jupyter.askForKernelRestart": false,
   "remote.autoForwardPortsSource": "hybrid",
-  "git.ignoreLegacyWarning": true
+  "git.ignoreLegacyWarning": true,
+  "python.terminal.activateEnvironment": false
 }
