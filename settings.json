@@ -35,5 +35,6 @@
   "jupyter.askForKernelRestart": false,
   "remote.autoForwardPortsSource": "hybrid",
   "git.ignoreLegacyWarning": true,
-  "python.terminal.activateEnvironment": false
+  "python.terminal.activateEnvironment": false,
+  "terminal.integrated.stickyScroll.enabled": false,
 }
