@@ -1,0 +1,53 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+// [
+//   {
+//     "context": "Workspace",
+//     "bindings": {
+//       // "shift shift": "file_finder::Toggle"
+//     },
+//   },
+//   {
+//     "context": "Editor && vim_mode == insert",
+//     "bindings": {
+//       // "j k": "vim::NormalBefore"
+//     },
+//   },
+// ]
+
+[
+  {
+    "context": "Terminal",
+    "bindings": {
+      "ctrl-[": "terminal_panel::Toggle",
+    },
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-shift-down": "editor::DuplicateLineDown",
+      "ctrl-shift-up": "editor::AddSelectionAbove",
+      "alt-w": "editor::WrapWithAbbreviation",
+      "ctrl-k e": "editor::MoveToEndOfLine",
+      "ctrl-k u": "editor::UndoSelection",
+      "ctrl-i": "editor::MoveUp",
+      "ctrl-u": "editor::MoveDown",
+      "ctrl-k b": "editor::MoveToBeginningOfLine",
+      "ctrl-o": "editor::MoveRight",
+      "ctrl-y": "editor::MoveLeft",
+      "ctrl-shift-w": "pane::CloseAllItems",
+    },
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-shift-n": "workspace::NewTerminal",
+      "ctrl-k o": "workspace::Open",
+    },
+  },
+]
