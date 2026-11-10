@@ -25,11 +25,14 @@
     "context": "Terminal",
     "bindings": {
       "ctrl-[": "terminal_panel::Toggle",
+      "ctrl-alt-.": "vim::ResizePaneUp",
+      "ctrl-alt-,": "vim::ResizePaneDown",
     },
   },
   {
     "context": "Editor",
     "bindings": {
+      "ctrl-[": "terminal_panel::Toggle",
       "ctrl-shift-down": "editor::DuplicateLineDown",
       "ctrl-shift-up": "editor::AddSelectionAbove",
       "alt-w": "editor::WrapWithAbbreviation",
@@ -41,6 +44,7 @@
       "ctrl-o": "editor::MoveRight",
       "ctrl-y": "editor::MoveLeft",
       "ctrl-shift-w": "pane::CloseAllItems",
+      "ctrl-shift-enter": "editor::NewlineAbove",
     },
   },
   {
